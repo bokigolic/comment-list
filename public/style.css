@@ -4,6 +4,7 @@
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  max-width: 450px;
 
   padding:1rem;
 }
