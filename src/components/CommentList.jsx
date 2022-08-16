@@ -26,7 +26,7 @@ const data = [
   {
     data.map(item =>{
       return(
-      <CommentItem item={item}/>
+      <CommentItem key={item.id} item={item}/>
        )
 
     })

@@ -4,6 +4,8 @@ const CommentItem = (props) => {
     <div>
       {item.title}
       {item.comment}
+      <button>Edit</button>
+      <button>Delete</button>
     </div>
   );
 };
