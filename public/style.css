@@ -1,0 +1,31 @@
+.comment-list{
+  display:flex;
+  flex-direction:column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  padding:1rem;
+}
+.comment-item{
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  padding: 0.5rem;
+
+  
+
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+
+ 
+  
+}
+
+.comment-list .comment-item >*{
+  margin-right: 1rem;
+}
+

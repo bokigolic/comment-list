@@ -1,5 +1,4 @@
 import CommentItem from "./ComementItem";
-
 const CommentList = ()=>{
 const data = [
   {
@@ -18,24 +17,19 @@ const data = [
     comment: "ccc"
   }
 ]
-
-  return (
+return (
     <div>
 <h1>Comment List</h1>
-<div className='list'>
+<div className='comment-list'>
   {
     data.map(item =>{
       return(
       <CommentItem key={item.id} item={item}/>
        )
-
     })
   }
-
 </div>
     </div>
-
     );
 };
-
 export default CommentList;
