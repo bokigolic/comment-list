@@ -1,3 +1,4 @@
+import { useState } from "react";
 import CommentItem from "./ComementItem";
 const CommentList = ()=>{
 const data = [
@@ -17,12 +18,15 @@ const data = [
     comment: "ccc"
   }
 ]
+
+const [comments, setComments] = useState(data)
+
 return (
     <div>
 <h1>Comment List</h1>
 <div className='comment-list'>
   {
-    data.map(item =>{
+    comments.map(item =>{
       return(
       <CommentItem key={item.id} item={item}/>
        )
